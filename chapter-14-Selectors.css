@@ -1,0 +1,250 @@
+/* simple selectors in below */
+
+/* div{
+  this is called name selector
+  height: 200px;
+  background-color:#B33771 ;
+} */
+#id-selector{
+  /* this is called id selector */
+  color: aliceblue;
+}
+
+.hello{
+  /*this is called class selector*/
+  font-size:30px;
+}
+
+
+/* combinator selectors in below */
+
+div p {
+  /* this is decsandant(বংশধর) selector */
+  color: red;
+}
+
+div > p{
+  /* this is child selector */
+  font-size: 30px;
+}
+
+div + h1{
+  /* adjacent sibling(পাশের ভাইবোন)selector */
+  color: red;
+}
+
+div ~ h1{
+  /* simple sibling(সাধারণ ভাইবোন) selector */
+  font-size: 50px;
+}
+
+/* Pseudo-class Selectors in below */
+
+a:link{
+  /* when unvisited */
+  color:#fbc531;
+}
+
+a:visited{
+  /* when visited */
+  color: green;
+
+}
+a:hover{
+  /* when mouse hover */
+ color:purple;
+}
+a:active{
+  /* when mouse active */
+  color: red;
+}
+
+p:first-child{
+  font-size:50px;
+}
+section p:first-child{
+  color: purple;
+}
+
+section p:first-child i{
+  color:red;
+}
+
+:root{
+ --font-color:(21, 21, 185);
+  --font-size:100px;
+}
+/* related of root  */
+h1{
+  color: var(--font-color);
+}
+h2{
+  color: var(--font-color);
+}
+h3{
+  color: var(--font-color);
+}
+h4{
+  color:var(--font-color);
+}
+
+h4{
+  font-size: var(--font-size);
+}
+
+input:checked{
+ width: 30px;
+ height: 30px;
+}
+
+input:disabled{
+ background-color:#487eb0 ;
+}
+input:focus{
+  background-color: aquamarine;
+  font-size: 30px;
+}
+
+input:in-range{
+  background-color: green;
+}
+
+input:out-of-range{
+  /* সীমার বাইরে */
+  background-color: red;
+}
+
+input:valid{
+  /* বৈধ */
+  background-color: green;
+}
+
+input:invalid{
+  /* অবৈধ */
+  background-color: red;
+}
+
+input:required{
+  /* প্রয়োজনীয় */
+  background-color: #fbc531;
+}
+
+input:read-only{
+  background-color: blue;
+}
+input:read-write{
+  background-color:#474787 ;
+}
+
+
+div:empty{
+  /* খালি */
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+section h1:last-child{
+  color:#9980FA ;
+  font-size: 40px;
+}
+
+div p:first-of-type{
+  color:green;
+}
+div p:last-of-type{
+  background-color: #487eb0;
+}
+
+p:lang(bd){
+  color: red;
+  font-size: 60px;
+}
+
+h1{
+  color:firebrick;
+}
+
+:not(h1){
+  /* without h1 */
+  color: violet;
+}
+
+/* p:nth-child(3){
+font-size: 100px;
+} */
+
+p:nth-last-child(3){
+font-size: 100px;
+}
+
+p:nth-of-type(3){
+  background-color: #ea8685;
+}
+p:nth-last-of-type(2){
+  background-color: #ea8685;
+}
+
+p:only-of-type{
+  color: greenyellow;
+}
+p:only-child{
+  color: blue;
+}
+
+
+/* All CSS Pseudo Elements in below*/
+
+#red::after{
+content: "abc";
+font-size:40px;
+color: #474787;
+}
+#re::before{
+content: "abc";
+font-size:40px;
+color: #474787;
+}
+
+
+h1::first-letter{
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+
+p::first-line{
+  font-size: 70px;
+ font-style: italic;
+}
+
+/* all css attribute selectors are given below */
+
+[class]{
+  opacity: 0.9;
+ border-radius: 50%;
+}
+[class=codjogot]{
+  opacity: 0.9;
+ border-radius: 50%;
+}
+
+[alt^=CodJo]{
+  /* prothom theke secuence bojay rekhe dhore */
+  opacity: 0.4;
+}
+
+[alt$= platform ]{ 
+  /* last theke scuence bojay rekhe dhorbe */
+  opacity: ;
+}
+
+[alt*=got]{
+  /*jekone jayga thekei dhorbe but scuence bojay thakte hobe. A secuence of charecters */
+  opacity: 0.2;
+}
+
+[alt~=is]{
+  /* when word */
+  opacity: 0.3;
+}

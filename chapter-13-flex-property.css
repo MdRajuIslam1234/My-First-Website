@@ -1,0 +1,32 @@
+.flex-container{
+  height: 500px;
+  background-color:#B53471 ;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  /* align-content: center; */
+  /* flex-flow property is a sorthand property of both direction and wrap  */
+  flex-flow:row wrap ;
+ 
+}
+
+.flex-item{
+  /* flex-grow:1;
+   flex-shrink:1;
+ flex-basis: 600px; */
+ flex: 1 0 600px;
+  height: 100px;
+  background-color:#FFC312 ;
+  margin: 2px;
+  font-size: 40px;
+  color: whitesmoke;
+  text-align: center;
+}
+.two{
+  order: 1;
+}
+.three{
+  order: 2;
+}

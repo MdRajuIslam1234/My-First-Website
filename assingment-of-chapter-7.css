@@ -1,0 +1,25 @@
+.box3{
+    height: 200px;
+    width: 190px;
+    background-color: green;
+  /* border-style: dotted;
+  border-color: red;
+  border-width: 10px; */
+  border: 20px dotted red;
+
+}
+#b{ width: 300px;
+    height: 200px;
+    margin: 40px;
+    padding: 50px;
+}
+/* total width and height= 200+50+50+10+10+40+40=400px
+                width=300+50+50+10+10+40+40=500px */
+.box3:hover{
+    background-color: yellow;
+}
+#b:hover{
+    background-color: blue;
+}
+
+

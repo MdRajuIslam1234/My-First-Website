@@ -1,0 +1,31 @@
+p{
+    background-color: rgb(255,150,0);
+}
+i{
+    color: #8040c0
+}
+h3{
+    background-color: hsl(30, 80%,70% )
+}
+em{
+   
+   color: rgb(0,220,0);
+}
+.green-background{
+ background-color: hsl(120, 70%, 50%);
+}
+strong{
+    color: hsl(240, 100%, 50%);
+    color: rgb(255, 0, 0);
+}
+mark{
+    color: hsl(60, 90%, 40%);
+}
+#bng{
+    color: hsl(5, 62%, 50%);
+}
+.bold{
+    font-weight: bold;
+    color: rgb(255, 0, 150);
+    background-color:hsl(30, 80%,60% ) ;
+}

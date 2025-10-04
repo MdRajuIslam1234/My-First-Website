@@ -1,0 +1,21 @@
+ h2{
+    color: blueviolet;
+ }
+    h1{
+        color: brown;
+        background-color:rgb(255, 255, 0);
+    }
+  em{
+    font-size: 50px;
+    color:rgba(255, 255,0, )
+  }
+   
+   #gn{
+    color: #0000ff
+   }
+   strong{
+    color: hsl(240, 79%, 20%);
+    
+    
+    background-color: hsla(240, 100%,50% , 0.5);
+   }
